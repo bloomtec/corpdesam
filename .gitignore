@@ -1,0 +1,8 @@
+/app/config
+/app/config/database.php
+/app/tmp
+/app/tmp/cache
+/app/tmp/logs
+/app/tmp/sessions
+/app/tmp/tests
+.project
