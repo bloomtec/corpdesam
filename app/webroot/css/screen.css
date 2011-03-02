@@ -1,5 +1,30 @@
 /** General Style Info **/
 
+body {
+	background: url(../img/background.jpeg);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center; 
+	font-family:"Calibri", "Lucida Sans Unicode", sans-serif;
+	color: #ffffff;
+	width:100%;
+	height:100%;
+	}
+
+a:link, a:active, a:visited {
+	color:#FFF;
+	text-decoration: none;
+	}
+	
+a img {
+	font-family:"Calibri", "Lucida Sans Unicode", sans-serif;
+	border: none;
+	}	
+	
+legend {
+	display: none;
+	}
+
 span{
   
 }
@@ -218,14 +243,20 @@ form .submit input[type=submit]:hover {
 /** Project's Styles **/
 
 /** Start Home **/
-
+#content{
+	min-height: 900px;
+}
 .color_home{
   color:#0DAACE;
 }
+#container{
+width:100%;
+height:100%;
 
+}
 /** Content **/
 
-.content_wrap{
+#content_wrap{
   background:url("../img/board_cont.png") no-repeat;
   width:991px;
   height:523px;
@@ -233,7 +264,13 @@ form .submit input[type=submit]:hover {
   
 }
 
-
+#content img {
+	position:fixed;
+	display: block;
+	width: 410px;
+	height: 363px;
+	text-indent: -9999px;
+	}
 
 /** Header **/
 
@@ -255,22 +292,61 @@ form .submit input[type=submit]:hover {
 
 /** Header Form Login **/
 
-.login{
-  /*-moz-border-radius: 1em;
-  -webkit-border-radius: 1em;
-  border-radius: 0em;*/ 
-  background: url("../img/board_login.png") no-repeat;
-  width: 347px;
-  float: right;
-  margin-right: 4em;
-  margin-top: 76px;
-}
 
+
+.bottom{
+	height:86px;
+	background: url("../img/edificios.png") repeat-x;
+	bottom:137px;
+	position:fixed;
+	width: 100%;
+}
 
 /** Footer Home **/
 
+#footer {
+	height:138px;
+	background: url("../img/texturafooter.png") repeat-x;
+	bottom:0;
+	position:fixed;
+	width: 100%;
+}
 
+#footer h1 {
+	float: left;
+	margin-left: 28px;
+	margin-top: 25px;
+	width: 379px;
+	}
 
+#footer h1 a {
+	display: block;
+	width: 379px;
+	height: 92px;
+	text-indent: -9999px;
+	background: url("../img/nombre.png") no-repeat;
+	}
+	
+
+	
+#footer .main-nav{
+	position:absolute;
+	top:24px;
+	right:105px;
+	
+	}
+
+#footer .main-nav li{
+	
+	}	
+
+#footer .main-nav li a{
+	background: url("../img/flecha_menu.png") right bottom no-repeat;
+	padding-right: 31px;
+	
+	}	
+
+	
 /** End Home **/
 
 /**  Start Pages   **/

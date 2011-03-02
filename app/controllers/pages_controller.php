@@ -82,7 +82,7 @@ class PagesController extends AppController {
 		$this->set(compact('page', 'subpage', 'title_for_layout'));
    
     if($title_for_layout=="Home"){
-      $this->render(implode('/', $path),"home");
+      $this->render(implode('/', $path),"default");
     }else{
       $this->render(implode('/', $path));
     }
