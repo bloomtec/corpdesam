@@ -33,12 +33,13 @@
 		echo $this->Html->css('supersized');
 		echo $this->Html->script("https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js");
 		echo $this->Html->script("supersized.3.0.core.js");
-		//echo $this->Html->script("front.js");
+		echo $this->Html->script("front.js");
 
 		echo $scripts_for_layout;
 	?>
 </head>
 <body>
+	<div id="supersized"></div>
 	<div id="container">
 		<div id="header">
 			
