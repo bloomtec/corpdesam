@@ -5,10 +5,11 @@ body {
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	background-position:center; 
-	font-family:"Calibri", "Lucida Sans Unicode", sans-serif;
+	font-family:"Arial", "Helvetica", sans-serif;
 	color: #ffffff;
 	width:100%;
 	height:100%;
+	font-size:12px;
 	}
 
 a:link, a:active, a:visited {
@@ -17,7 +18,7 @@ a:link, a:active, a:visited {
 	}
 	
 a img {
-	font-family:"Calibri", "Lucida Sans Unicode", sans-serif;
+	font-family:"Arial", "Helvetica", sans-serif;
 	border: none;
 	}	
 	
@@ -54,7 +55,7 @@ h4 {
 	font-weight: normal;
 }
 ul, li {
-	margin: 0 12px;
+	margin: 0px 0px;
 }
 .clear{
   clear:both;
@@ -333,6 +334,7 @@ height:100%;
 	position:absolute;
 	top:24px;
 	right:105px;
+	font-size:15px;
 	
 	}
 
@@ -343,8 +345,53 @@ height:100%;
 #footer .main-nav li a{
 	background: url("../img/flecha_menu.png") right bottom no-repeat;
 	padding-right: 31px;
-	
+	padding-top:25px;
+	margin-left:26px;
 	}	
+  
+#footer  .main-nav li {
+    text-transform: uppercase;
+    display: relative;
+    
+  }
+
+#footer  .main-nav	li ul { 
+	display: none; 
+	top:-354px;
+	left:0px;
+	}
+
+#footer  .main-nav	li ul li { 
+	width:206px;
+	}
+	
+#footer  .main-nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  border-top: 1px solid #B4F421;
+  padding: 10px 15px 10px 15px;
+  background: #183401;
+  margin-left: 1px;
+  opacity:0.8;
+  line-height: 18px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+#footer  .main-nav ul li a p {
+}
+#footer  .main-nav li:hover ul {
+  display: block;
+  position: absolute;
+}
+
+#footer  .main-nav li:hover li {
+  float: none;
+}
+#footer  .main-nav li:hover a {  }
+#footer  .main-nav li:hover li a:hover { background: #063496; border-top: 1px solid #1676ff; }
+  
 
 	
 /** End Home **/
