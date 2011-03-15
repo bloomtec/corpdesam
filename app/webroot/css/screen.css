@@ -416,3 +416,17 @@ height:100%;
  
   
 /** End Pages **/
+
+/** Intern Content **/
+
+ #intern_content {
+ 	margin:30px;
+ 	
+ }
+
+#intern_content .ambiental {
+ 	background-image:  url("../img/ambiental.png");
+ 	width: 364px;
+ 	height: 45px;
+ }
+/** End Intern Content **/ 
