@@ -7,8 +7,8 @@ class AppController extends Controller {
 	{
 		if(isset($this->params["prefix"])&&$this->params["prefix"]=="admin") $this->layout="admin";
 		$this->Auth->loginAction = array('controller'=>'users','action'=>'login');
-		$this->Auth->allow('*');
-		$this->Auth->loginRedirect  = array('controller'=>'users','action'=>'menu');
+		//$this->Auth->allow('*');
+		$this->Auth->loginRedirect  = array('controller'=>'pages','action'=>'index');
 
 	}
 	function beforeRender(){

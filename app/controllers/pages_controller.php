@@ -17,7 +17,7 @@ class PagesController extends AppController {
 		$this->layout="internas";
 		$this->set("title","ambiental");
 		$this->set("fondo","fondo_ambiental.jpg");
-		$this->set("page",$this->findByTitle("ambiental"));
+		$this->set("page",$this->Page->findByTitle("ambiental"));
 	}
 	function mineria(){
 		$this->layout="internas";

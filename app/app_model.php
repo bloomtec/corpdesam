@@ -32,5 +32,5 @@
  * @subpackage    cake.cake.libs.model
  */
 class AppModel extends Model {
-
+	
 }
