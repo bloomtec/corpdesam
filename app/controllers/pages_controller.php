@@ -98,14 +98,14 @@ class PagesController extends AppController {
 			$this->redirect(array('action' => 'index'));
 		}
 		if (!empty($this->data)) {
-			if($this->data["Page"]["locale"]=="es_es"){
+			/*if($this->data["Page"]["locale"]=="es_es"){
 				$this->Page->locale = 'es_es';
-			}
+			}*/
 			if ($this->Page->save($this->data)) {
-				$this->Session->setFlash(__('The page has been saved', true));
+				$this->Session->setFlash(__('La página ha sido guardada', true));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The page could not be saved. Please, try again.', true));
+				$this->Session->setFlash(__('No se pudo guardar la página. Por favor, intente de nuevo.', true));
 			}
 		}
 		if (empty($this->data)) {
@@ -113,7 +113,6 @@ class PagesController extends AppController {
 			//debug($this->data);
 		}
 
-		$images = $this->Page->Image->find('list');
 		$this->set(compact('images'));
 	}
 
