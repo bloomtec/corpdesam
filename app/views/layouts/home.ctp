@@ -23,7 +23,7 @@
 	<?php echo $this->Html->charset(); ?>
 	<title>
 		<?php __($PAGE_TITLE); ?>
-		<?php echo $title_for_layout; ?>
+		<?php echo $title; ?>
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
@@ -31,6 +31,7 @@
 		echo $this->Html->css('front');
 		echo $this->Html->css('layout'); //EStilos del layout
 		echo $this->Html->script("https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js");
+		echo $this->Html->script("supersized.3.0.js");
 		echo $this->Html->script("front.js");
 
 		echo $scripts_for_layout;

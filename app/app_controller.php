@@ -12,7 +12,7 @@ class AppController extends Controller {
 
 	}
 	function beforeRender(){
-		$PAGE_TITLE="Titulo de la pagina";
+		$PAGE_TITLE="Corpdesam";
 		$this->set(compact("PAGE_TITLE"));
 	}
 
