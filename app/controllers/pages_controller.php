@@ -11,17 +11,19 @@ class PagesController extends AppController {
 		$this->layout="internas2";
 		$this->set("title","educativa y social");
 		$this->set("fondo","fondo_educacion.jpg");
-		$this->set("page",$this->findByTitle("ambiental"));
+		$this->set("page",$this->findByTitle("educativa y social"));
 	}
 	function ambiental(){
 		$this->layout="internas";
 		$this->set("title","ambiental");
 		$this->set("fondo","fondo_ambiental.jpg");
+		$this->set("page",$this->findByTitle("ambiental"));
 	}
 	function mineria(){
 		$this->layout="internas";
 		$this->set("title","mineria");
 		$this->set("fondo","fondo_mineria.jpg");
+		$this->set("page",$this->findByTitle("mineria"));
 		
 	}
 	function index() {
