@@ -3,11 +3,11 @@ class Page extends AppModel {
 	var $name = 'Page';
 	var $displayField = 'title';
 	var $locale = 'en_us';
-	var $actsAs=array(
+/*	var $actsAs=array(
 		"Translate"=>array(
 			"title"=>"title","description"=>"description","content"=>"content"
 		)
-	);
+	);*/
 	var $validate = array(
 		'title' => array(
 			'notempty' => array(
@@ -22,23 +22,7 @@ class Page extends AppModel {
 	);
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
-	var $hasAndBelongsToMany = array(
-		'Image' => array(
-			'className' => 'Image',
-			'joinTable' => 'images_pages',
-			'foreignKey' => 'page_id',
-			'associationForeignKey' => 'image_id',
-			'unique' => true,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'finderQuery' => '',
-			'deleteQuery' => '',
-			'insertQuery' => ''
-		)
-	);
+
 
 }
 ?>

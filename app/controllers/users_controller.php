@@ -62,6 +62,7 @@ class UsersController extends AppController {
 			$this->redirect(array('action' => 'index'));
 		}
 		if (!empty($this->data)) {
+			$this->data["User"]["password"]=$this->data["User"]["password2"];
 			if ($this->User->save($this->data)) {
 				$this->Session->setFlash(__('The user has been saved', true));
 				$this->redirect(array('action' => 'index'));
@@ -137,18 +138,19 @@ class UsersController extends AppController {
 		
 		if (!empty($this->data)) 
 		{
+			$this->data["User"]["password"]=$this->Auth->password($this->data["User"]["password2"]);
 			if ($this->User->save($this->data)) {
-				$this->Session->setFlash(__('The user has been saved', true));
-				$this->redirect(array('action' => 'index'));
+				$this->Session->setFlash(__('El usuario ha sido guardado', true));
+				$this->redirect(array('controller'=>'pages','action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The user could not be saved. Please, try again.', true));
+				$this->Session->setFlash(__('No se pudo actualizar el usuario. Por favor, intente de nuevo', true));
 			}
 		}
 		if (empty($this->data)) {
 			$this->data = $this->User->read(null, $id);
 		}
 		
-		$roles = $this->User->Role->find('list');
+		//$roles = $this->User->Role->find('list');
 		$this->set(compact('roles'));
 	}
 

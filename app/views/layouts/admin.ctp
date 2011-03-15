@@ -56,16 +56,10 @@
 			<?php if(!isset($login)): ?> 
 			<ul class="nav">
 				<li>
-					<?php echo $html->link("Colecciones",array("controller"=>"colecciones","action"=>"index")); ?>
-					<ul>
-						<li>1</li>
-						<li>2</li>
-						<li>3</li>
-					</ul>
+					<?php echo $html->link("Páginas",array("controller"=>"pages","action"=>"index")); ?>
+				
 				</li>
 				<li><?php echo $html->link("Datos de Usaurio",array("controller"=>"users","action"=>"edit",1)); ?></li>
-				<li><?php echo $html->link("Eventos",array("controller"=>"eventos","action"=>"index")); ?></li>
-				<li><?php echo $html->link("Paginas",array("controller"=>"pages","action"=>"index")); ?></li>
 				<li><?php echo $html->link(__("logout",true),array("controller"=>"users","action"=>"logout"),array("class"=>"logout"))?><li> 
 			</ul>
 			<?php endif;?>
@@ -86,7 +80,7 @@
 				);
 			?>
 		</div>
-		<?php echo $this->element("developer-utilities");?>
+		<?php //echo $this->element("developer-utilities");?>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
 </body>
