@@ -73,9 +73,13 @@
 		</div>
 		<div id="content">
 			<?php echo $this->Session->flash(); ?>
-			<?php echo $content_for_layout; ?>			
+			<?php echo $content_for_layout; ?>
+			
 		</div>
-	
+		<div style="clear:both"></div>
+	    <div id="intern_footer">
+	    	
+	    </div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
 </body>

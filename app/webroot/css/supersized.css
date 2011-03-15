@@ -89,6 +89,7 @@ Website: www.buildinternet.com/project/supersized
 	}
 	#supersized{
 	    position:fixed;
+	    z-index: -1;
 	}
 	#supersized img{ -ms-interpolation-mode: bicubic; }
 	#supersized img, #supersized a{
