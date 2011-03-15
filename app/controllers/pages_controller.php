@@ -99,6 +99,7 @@ class PagesController extends AppController {
 			$this->data = $this->Page->read(null, $id);
 			//debug($this->data);
 		}
+
 		$images = $this->Page->Image->find('list');
 		$this->set(compact('images'));
 	}
@@ -121,25 +122,30 @@ class PagesController extends AppController {
 		$this->set('slides', $slides);
 
 	}
-	function success(){
-		$slides="{image : '/img/success1.jpg', title : '', url : '#'},{image : '/img/success2.jpg', title : '', url : '#'}";
-		$this->set('slides', $slides);
-
-	}
+	
 	function reOrder(){
- 	 /* 
-   		* Ordena las categorias se une con el widget de sortable
-    * */
-    foreach($this->data["Item"] as $id=>$posicion){
-    $this->Page->id=$id;
-    $this->Page->saveField("order",$posicion);
-    }
-    
-    echo "yes";
-    Configure::write('debug', 0);   
-    $this->autoRender = false;   
-    exit(); 
-  }
+	 	 /* 
+	   		* Ordena las categorias se une con el widget de sortable
+	    * */
+	    foreach($this->data["Item"] as $id=>$posicion){
+	    $this->Page->id=$id;
+	    $this->Page->saveField("order",$posicion);
+	
+			$this->set(compact('page', 'subpage', 'title_for_layout'));
+	   
+	    if($title_for_layout=="Home"){
+	      $this->render(implode('/', $path),"default");
+	    }else{
+	      $this->render(implode('/', $path));
+	
+	    }
+	    
+	    echo "yes";
+	    Configure::write('debug', 0);   
+	    $this->autoRender = false;   
+	    exit(); 
+	  }
 	 
+	}
 }
 ?>

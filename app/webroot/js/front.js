@@ -1,4 +1,4 @@
-var server="corpdesam"
+var server="/corpdesam"
 $(function(){
 //Super size
 			$.fn.supersized.options = {  
@@ -14,7 +14,7 @@ $(function(){
 				slide_captions: 1,
 				slide_interval: 3000,
 				slides : [
-					{image : server+'img/background.jpg', title : 'cielo', url : 'http://www.flickr.com/photos/wumbus/4582735030/in/set-72157623876357531/'}
+					{image : server+'/img/background.jpg', title : 'cielo', url : 'http://www.flickr.com/photos/wumbus/4582735030/in/set-72157623876357531/'}
 				]
 			};
 	        $('#supersized').supersized();  

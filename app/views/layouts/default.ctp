@@ -20,6 +20,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+	<script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>
 	<?php echo $this->Html->charset(); ?>
 	<title>
 		<?php __($PAGE_TITLE); ?>
@@ -29,9 +30,9 @@
 		echo $this->Html->meta('icon');
 
 		echo $this->Html->css('front');
-		echo $this->Html->css('layout'); //EStilos del layout
+        //EStilos del layout
 		echo $this->Html->css('supersized');
-		echo $this->Html->script("https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js");
+		echo $this->Html->script("https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js");
 		echo $this->Html->script("supersized.3.0.core.js");
 		echo $this->Html->script("front.js");
 
@@ -47,12 +48,18 @@
 		
 		<div id="content">
 			<?php echo $this->Session->flash(); ?>
+<<<<<<< HEAD
 			<?php echo $title; ?> 
 
+=======
+			<?php echo $content_for_layout; ?> 
+			
+			<div class="bottom"></div>
+>>>>>>> abe6808c8c045fc60351d3fb14bcd0b24a5bce2c
 		</div>
 		
 		<div id="footer">
-			
+			<?php echo $this->element("footer");?>
 		</div>
 	</div>
 	
