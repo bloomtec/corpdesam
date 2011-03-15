@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 15-03-2011 a las 12:24:21
+-- Tiempo de generación: 15-03-2011 a las 13:28:33
 -- Versión del servidor: 5.1.33
 -- Versión de PHP: 5.2.9
 
@@ -89,6 +89,31 @@ CREATE TABLE IF NOT EXISTS `aros_acos` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `i18n`
+--
+
+CREATE TABLE IF NOT EXISTS `i18n` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `locale` varchar(6) NOT NULL,
+  `model` varchar(255) NOT NULL,
+  `foreign_key` int(10) NOT NULL,
+  `field` varchar(255) NOT NULL,
+  `content` text,
+  PRIMARY KEY (`id`),
+  KEY `locale` (`locale`),
+  KEY `model` (`model`),
+  KEY `row_id` (`foreign_key`),
+  KEY `field` (`field`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+--
+-- Volcar la base de datos para la tabla `i18n`
+--
+
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `images`
 --
 
@@ -139,17 +164,23 @@ CREATE TABLE IF NOT EXISTS `images_pages` (
 --
 
 CREATE TABLE IF NOT EXISTS `pages` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(45) DEFAULT NULL,
   `description` varchar(45) DEFAULT NULL,
   `content` longtext,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Volcar la base de datos para la tabla `pages`
 --
 
+INSERT INTO `pages` (`id`, `title`, `description`, `content`) VALUES
+(1, 'ambiental', NULL, 'CONTENIDO AMBIENTAL'),
+(2, 'mineria', NULL, 'CONTENIDO MINERIA'),
+(3, 'educativa y social', NULL, 'CONTENIDO EDUCACION Y SOCIAL'),
+(4, 'juridica', NULL, 'CONTENIDO JURIDICA'),
+(5, 'planecion urbanismo y servicios', NULL, 'CONTENIDO PLANEACION');
 
 -- --------------------------------------------------------
 
