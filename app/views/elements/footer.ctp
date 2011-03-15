@@ -5,7 +5,7 @@
 	    	<li><a href="">Corpdesam</a></li>
 	    	<li><a href="">Ambiental</a></li>
 	    	<li><a href="">Juridica</a></li>
-	    	<li><a href=""><p>Planeacion, urbanismo y servicios públicos</p></a></li>
+	    	<li><a href=""><p>Planeación, urbanismo y servicios públicos</p></a></li>
 	    	<li><a href="">Mineria</a></li>
 	    	<li><a href="">Educativa social</a></li>
 	    	<li><a href="">Perfil Profesional</a></li>
