@@ -2,6 +2,12 @@
 class PagesController extends AppController {
 
 	var $name = 'Pages';
+	function beforeFilter()
+	{
+		parent::beforeFilter();
+		$this->Auth->allow('home','educativa','ambiental','ambiental');
+
+	}
 	function home(){
 		$this->layout="home";
 		$this->set("title","home");
