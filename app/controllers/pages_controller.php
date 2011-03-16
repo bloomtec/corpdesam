@@ -5,7 +5,7 @@ class PagesController extends AppController {
 	function beforeFilter()
 	{
 		parent::beforeFilter();
-		$this->Auth->allow('home','educativa','ambiental','ambiental');
+		$this->Auth->allow('home','educativa','ambiental','mineria');
 
 	}
 	function home(){
@@ -17,7 +17,7 @@ class PagesController extends AppController {
 		$this->layout="internas2";
 		$this->set("title","educativa y social");
 		$this->set("fondo","fondo_educacion.jpg");
-		$this->set("page",$this->findByTitle("educativa y social"));
+		$this->set("page",$this->Page->findByTitle("educativa y social"));
 	}
 	function ambiental(){
 		$this->layout="internas";
@@ -29,7 +29,7 @@ class PagesController extends AppController {
 		$this->layout="internas";
 		$this->set("title","mineria");
 		$this->set("fondo","fondo_mineria.jpg");
-		$this->set("page",$this->findByTitle("mineria"));
+		$this->set("page",$this->Page->findByTitle("mineria"));
 		
 	}
 	function index() {
