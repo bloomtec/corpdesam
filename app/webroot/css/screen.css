@@ -265,14 +265,26 @@ height:100%;
   
 }
 
-#content img {
+/*#content img {
 	position:fixed;
 	display: block;
 	width: 410px;
 	height: 363px;
 	text-indent: -9999px;
-	}
-
+	left:0;
+	top:0;
+}*/
+#content img {
+	position:fixed;
+	display: block;
+	/*width: 410px;*/
+	/*height: 363px;*/
+	text-indent: -9999px;
+	left:50%;
+	top:50%;
+	margin-left: -205px;
+	margin-top: -326px;
+}
 /** Header **/
 
 #header_wrap{

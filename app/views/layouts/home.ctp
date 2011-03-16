@@ -31,7 +31,7 @@
 		echo $this->Html->css('front');
 		echo $this->Html->css('layout'); //EStilos del layout
 		echo $this->Html->css('supersized');
-		echo $this->Html->script("https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js");
+		echo $this->Html->script("jquery.js");
 		echo $this->Html->script("supersized.3.0.core.js");
 		echo $this->Html->script("front.js");
 
@@ -62,6 +62,24 @@
 	        	$('#supersized img').attr("src",$(this).attr("src"));
 	        });
 	 
+	});
+	$(document).ready(function(){
+		//$("#logo").animate();
+
+		  $('#logo').animate({
+		    left:0,
+		    top: 0,
+		    marginLeft:0,
+		    marginTop:0,
+		    width:410,
+		    height:363,
+		    
+		    
+		  }, 5000, function() {
+		    // Animation complete.
+		  });
+
+
 	});
 	</script>
 </head>

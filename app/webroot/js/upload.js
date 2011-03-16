@@ -23,10 +23,9 @@ $(document).ready(function() {
 	'auto': true,
 	'cancelImg': server+'img/cancel.png',
 	'onComplete': function(a,b,c,d){
-		var name=c.name;
-		alert(name);
-		$(".preview").html('<img  src="'+server+'img/'+name+'" />');
-		$("#single-field").val(name);
+		$(".preview").html('<img  src="'+d+'" />');
+		var file=d.split("/");
+		$("#single-field").val(file[(file.length-1)]);
 		
 	}
 	});

@@ -26,7 +26,8 @@ THE SOFTWARE.
 if (!empty($_FILES)) {
 	$tempFile = $_FILES['Filedata']['tmp_name'];
 	$targetPath = $_SERVER['DOCUMENT_ROOT'] . $_REQUEST['folder'] . '/';
-	$targetFile =  str_replace('//','/',$targetPath) . $_FILES['Filedata']['name'];
+	$fileParts  = pathinfo($_FILES['Filedata']['name']);
+	$targetFile =  str_replace('//','/',$targetPath) .strtotime("now").".".$fileParts['extension'];
 	
 	// $fileTypes  = str_replace('*.','',$_REQUEST['fileext']);
 	// $fileTypes  = str_replace(';','|',$fileTypes);
