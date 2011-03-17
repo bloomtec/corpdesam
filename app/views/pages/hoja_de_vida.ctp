@@ -1,5 +1,6 @@
 <div id="intern_content">
 	<div class="hoja-de-vida">
+		<h1>Envianos tu hoja de vida</h1>
 			<div class="mensaje">
 					
 			</div>

@@ -34,7 +34,7 @@ class PagesController extends AppController {
 	function mineria(){
 		$this->layout="ajax";
 		$this->set("title","mineria");
-		$this->set("fondo","fondo_mineria.jpg");
+		$this->set("fondo","mineros.jpg");
 		$this->set("page",$this->Page->findByTitle("mineria"));
 		
 	}
