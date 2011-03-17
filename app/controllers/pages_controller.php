@@ -5,7 +5,7 @@ class PagesController extends AppController {
 	var $uses=array("Page");
 	function beforeFilter(){
 		parent::beforeFilter();
-		$this->Auth->allow('home','educativa','ambiental','mineria');
+		$this->Auth->allow('planeacion','home','educativa','ambiental','mineria','hojaDeVida','perfilProfesional','corpdesam','juridica');
 
 	}
 	
