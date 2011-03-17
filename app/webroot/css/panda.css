@@ -1,0 +1,16 @@
+.archivo{
+	width: 400px;
+}
+#intern_content .titulo_perfil_profesional {
+    background-image: url("../img/titulo_perfil_profesional.png");
+    height: 98px;
+    width: 428px;
+}
+.uploader-container{
+ float:left;
+
+}
+.enviar{
+	margin-left:20px;
+	float:left;
+}
