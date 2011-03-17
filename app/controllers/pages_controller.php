@@ -3,16 +3,21 @@ class PagesController extends AppController {
 
 	var $name = 'Pages';
 	var $uses=array("Page");
-	function beforeFilter()
-	{
+	function beforeFilter(){
 		parent::beforeFilter();
 		$this->Auth->allow('home','educativa','ambiental','mineria');
 
 	}
+	
 	function home(){
 		$this->layout="home";
 		$this->set("title","home");
 		
+	}
+	function hojaDeVida(){
+		$this->layout="ajax";
+		$this->set("title","Envianos tu hoja de vida");
+		$this->set("fondo","background.jpg");
 	}
 	function educativa(){
 		$this->layout="ajax";

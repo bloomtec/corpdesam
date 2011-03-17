@@ -22,5 +22,8 @@
 			<div style="clear:both"></div>
 				
 			<?php echo $form->end();?>
+			<div class="form-error"> 
+				No ha subido su Hoja de vida, recuerde que solo se admiten archivos: PDF, WORD y Power Point
+			</div>
 	</div>
 </div>

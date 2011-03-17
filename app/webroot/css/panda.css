@@ -14,3 +14,17 @@
 	margin-left:20px;
 	float:left;
 }
+.hoja-de-vida {
+	padding-top: 40px;
+	width:750px;
+	background: white;
+}
+.form-error{
+	margin-top:20px;
+	color: red;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 370px;
+    display:none;
+}

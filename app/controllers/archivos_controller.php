@@ -7,7 +7,21 @@ class ArchivosController extends AppController {
 		$this->Archivo->recursive = 0;
 		$this->set('archivos', $this->paginate());
 	}
-
+	function admin_download($id){
+		$this->view = 'Media';
+		$archivo=$this->Archivo->read(null,$id);
+		$partes=explode(".",$archivo["Archivo"]["path"]);
+		$params = array(
+	 		'id' => $archivo["Archivo"]["path"],
+	 		'name' => $partes[0],
+	 		'download' => true,
+	 		'extension' => $partes[1],
+	 		'mimeType' => array('docx' => "application/vnd.openxmlformats-officedocument.wordprocessingml.document","dotx"=>"application/vnd.openxmlformats-officedocument.wordprocessingml.template","pptx"=>"application/vnd.openxmlformats-officedocument.presentationml.presentation","ppsx"=>"application/vnd.openxmlformats-officedocument.presentationml.slideshow","potx"=>"application/vnd.openxmlformats-officedocument.presentationml.template","xlsx"=>"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","xltx"=>"application/vnd.openxmlformats-officedocument.spreadsheetml.template"),
+	 		'path' =>  WWW_ROOT.'img'.DS
+ 		);
+		$this->set($params);
+	
+	}
 	function view($id = null) {
 		if (!$id) {
 			$this->Session->setFlash(__('Invalid archivo', true));
