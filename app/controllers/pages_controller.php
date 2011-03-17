@@ -2,6 +2,7 @@
 class PagesController extends AppController {
 
 	var $name = 'Pages';
+	var $uses=array("Page");
 	function beforeFilter()
 	{
 		parent::beforeFilter();
@@ -31,6 +32,30 @@ class PagesController extends AppController {
 		$this->set("fondo","fondo_mineria.jpg");
 		$this->set("page",$this->Page->findByTitle("mineria"));
 		
+	}
+	function perfilProfesional(){
+		$this->layout="ajax";
+		$this->set("title","Perfil Profesional");
+		$this->set("fondo","fondo_perfil_profesional.jpg");
+		$this->set("page",$this->Page->findByTitle("perfil profesional"));
+	}
+	function corpdesam(){
+		$this->layout="ajax";
+		$this->set("title","Perfil Profesional");
+		$this->set("fondo","fondo_perfil_profesional.jpg");
+		$this->set("page",$this->Page->findByTitle("corpdesam"));
+	}
+	function juridica(){
+		$this->layout="ajax";
+		$this->set("title","Perfil Profesional");
+		$this->set("fondo","fondo_perfil_profesional.jpg");
+		$this->set("page",$this->Page->findByTitle("juridica"));
+	}
+	function planeacion(){
+		$this->layout="ajax";
+		$this->set("title","Perfil Profesional");
+		$this->set("fondo","fondo_perfil_profesional.jpg");
+		$this->set("page",$this->Page->findByTitle("Planeación, urbanismo y servicios públicos"));
 	}
 	function index() {
 		$this->Page->recursive = 0;
@@ -88,7 +113,7 @@ class PagesController extends AppController {
 				$this->Session->setFlash(__('The page could not be saved. Please, try again.', true));
 			}
 		}
-		$images = $this->Page->Image->find('list');
+	
 		$this->set(compact('images'));
 	}
 

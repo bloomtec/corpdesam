@@ -29,17 +29,20 @@
 		echo $this->Html->meta('icon');
 
 		echo $this->Html->css('front');
-		echo $this->Html->css('layout'); //EStilos del layout
+		//echo $this->Html->css('uploadify'); //EStilos del layout
 		echo $this->Html->css('supersized');
 		echo $this->Html->script("jquery.js");
+		echo $this->Html->script("jquery.uploadify.v2.1.4.min.js");
 		echo $this->Html->script("supersized.3.0.core.js");
+		//echo $this->Html->script("swfobject.js");
+		//echo $this->Html->script("upload.js");
 		echo $this->Html->script("front.js");
 
 		echo $scripts_for_layout;
 	?>
 	<script type="text/javascript">
 	
-	var server="/corpdesam";
+	var server="/corpdesam/";
 	$(function(){
 	
 	//Super size
@@ -56,7 +59,7 @@
 				slide_captions: 1,
 				slide_interval: 3000,
 				slides : [
-					{image : server+'/img/background.jpg', title : 'cielo', url : 'http://www.flickr.com/photos/wumbus/4582735030/in/set-72157623876357531/'}
+					{image : server+'img/background.jpg', title : 'cielo', url : 'http://www.flickr.com/photos/wumbus/4582735030/in/set-72157623876357531/'}
 				]
 			};
 	        $('#supersized').supersized();  
