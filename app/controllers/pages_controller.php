@@ -42,19 +42,19 @@ class PagesController extends AppController {
 	function corpdesam(){
 		$this->layout="ajax";
 		$this->set("title","Perfil Profesional");
-		$this->set("fondo","fondo_perfil_profesional.jpg");
+		$this->set("fondo","fondo_corpdesam.jpg");
 		$this->set("page",$this->Page->findByTitle("corpdesam"));
 	}
 	function juridica(){
 		$this->layout="ajax";
 		$this->set("title","Perfil Profesional");
-		$this->set("fondo","fondo_perfil_profesional.jpg");
+		$this->set("fondo","fondo_juridica.jpg");
 		$this->set("page",$this->Page->findByTitle("juridica"));
 	}
 	function planeacion(){
 		$this->layout="ajax";
 		$this->set("title","Perfil Profesional");
-		$this->set("fondo","fondo_perfil_profesional.jpg");
+		$this->set("fondo","fondo_planeacion.jpg");
 		$this->set("page",$this->Page->findByTitle("Planeación, urbanismo y servicios públicos"));
 	}
 	function index() {
