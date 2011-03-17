@@ -9,7 +9,7 @@
 		//	echo $this->Form->input('slug',array("div"=>"float"));
 			//echo $this->Form->input('description',array("div"=>"float"));
 			//echo $this->Form->input('locale',array("div"=>"float","options"=>array("en_us"=>"English","es_es"=>"Spanish")));
-			echo $this->Form->input('content');
+			echo $this->Form->input('content',array("label"=>"contenido"));
 			//echo $this->Form->input('Image');
 
 		

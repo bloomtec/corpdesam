@@ -542,6 +542,7 @@ bottom:0;
 }
 .hoja-de-vida form{
 	color: black;
+	margin-top:20px;
 }
 .hoja-de-vida .submit{
 	display:none;
@@ -552,16 +553,33 @@ bottom:0;
 .inputs label{
  	display: block;
     float: left;
-    width: 110px;
+    width: 150px;
     margin-left: 10px;
+    font-size: 12px;
+    font-weight: bold;
 }
 .archivo{
 }
 .ext img{
 	width: 60px;
-	 height: 80px;
+	height: 80px;
 }
 .archivo .ext{
  	height: 120px;
+}
+#intern_content .perfil-profesional p{
+	font-size: 13px;
+    line-height: 16px;
+    margin-left: 10px;
+    text-align: justify;
+	color:black;
+    text-transform: uppercase;
+    width: 750px;
+}
+#intern_content .perfil-profesional{
+	padding-top: 25px;
+}
+#intern_content .input{
+	margin:10px;
 }
 /** End Intern Footer **/

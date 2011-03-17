@@ -36,7 +36,7 @@ class PagesController extends AppController {
 	function perfilProfesional(){
 		$this->layout="ajax";
 		$this->set("title","Perfil Profesional");
-		$this->set("fondo","fondo_perfil_profesional.jpg");
+		$this->set("fondo","fondo_background.jpg");
 		$this->set("page",$this->Page->findByTitle("perfil profesional"));
 	}
 	function corpdesam(){
