@@ -476,8 +476,8 @@ img#logo {
  }
 
 #intern_content .planeacion {
- 	background:  url("../img/planeacion.png") no-repeat left bottom;
- 	width: 405px;
+ 	background:  url("../img/planeacion.png") no-repeat left center;
+ 	width: 562px;
  	height: 96px;
  }
 
@@ -488,8 +488,8 @@ img#logo {
  }
 
 #intern_content .perfil {
- 	background:  url("../img/perfil.png") no-repeat left bottom;
- 	width: 428px;
+ 	background:  url("../img/perfil.png") no-repeat left center;
+ 	width: 410px;
  	height: 99px;
  } 
 
@@ -498,6 +498,7 @@ img#logo {
  	width: 405px;
  	height: 96px;
  } 
+
 
 #intern_content .content_type_1{
 	margin-top:14px;

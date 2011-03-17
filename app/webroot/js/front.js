@@ -37,8 +37,16 @@ $(function(){
 			$("#supersized img").attr("src",server+"img/fondo_portafolio.jpg");
       	 	break;
       	 	
+      	 	case "perfil_profesional":
+			$("#supersized img").attr("src",server+"img/fondo_perfil.jpg");
+      	 	break;
+      	 	
       	 	case "corpdesam":
 			$("#supersized img").attr("src",server+"img/fondo_portafolio.jpg");
+			
+			case "planeacion":
+			$("#supersized img").attr("src",server+"img/fondo_planeacion.jpg");
+			
       	 	break;
       	 	default:
       	 	$("#supersized img").attr("src",server+"img/background.jpg");
