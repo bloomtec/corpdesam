@@ -55,7 +55,7 @@ ul.nav li li li.sfHover ul {
 /*** DEMO SKIN ***/
 .nav {
 	float:			right;
-	margin-bottom:	1em;
+	margin-top:	120px;
 }
 .nav a {
 	border-left:	1px solid #fff;
@@ -64,10 +64,10 @@ ul.nav li li li.sfHover ul {
 	text-decoration:none;
 }
 .nav a, .nav a:visited  { /* visited pseudo selector so IE6 applies text colour*/
-	color:			#13a;
+	color:			white;
 }
 .nav li {
-	background:		#BDD2FF;
+	background:		#308528;
 }
 .nav li li {
 	background:		#AABDE6;
@@ -77,7 +77,7 @@ ul.nav li li li.sfHover ul {
 }
 .nav li:hover, .nav li.sfHover,
 .nav a:focus, .nav a:hover, .nav a:active {
-	background:		#CFDEFF;
+	background:		#5ab152;
 	outline:		0;
 }
 

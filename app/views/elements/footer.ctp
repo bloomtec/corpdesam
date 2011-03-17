@@ -2,7 +2,14 @@
 <ul class="main-nav">
 	<li><a href="">MENÚ</a>
 		 <ul>
-	    	<li><a href="">Corpdesam</a></li>
+	    	<li>
+	    	<?php echo $this->Html->link(
+					   $this->Html->tag('anchor', 'Corpdesam'),
+					    array("controller"=>"pages","action"=>"corpdesam"),
+					   array('escape' => false)
+					   );
+			 ?>
+			</li>
 	    	<li>
 	    	<?php echo $this->Html->link(
 					   $this->Html->tag('anchor', 'Ambiental'),
@@ -11,8 +18,23 @@
 					   );
 			 ?>
 			</li>
-	    	<li><a href="">Juridica</a></li>
-	    	<li><a href=""><p>Planeación, urbanismo y servicios públicos</p></a></li>
+	    	<li>
+	    	<?php echo $this->Html->link(
+					   $this->Html->tag('anchor', 'Juridica'),
+					    array("controller"=>"pages","action"=>"juridica"),
+					   array('escape' => false)
+					   );
+			 ?>
+			</li>
+			<li>
+	    	<?php echo $this->Html->link(
+					   $this->Html->tag('anchor', 'Planeación, urbanismo y servicios públicos'),
+					    array("controller"=>"pages","action"=>"planeacion"),
+					   array('escape' => false)
+					   );
+			 ?>
+			</li>
+
 	    	<li>
 	    	<?php echo $this->Html->link(
 					   $this->Html->tag('anchor', 'Mineria'),
@@ -27,7 +49,12 @@
 					   array('escape' => false)
 					   );
 			 ?></li>
-	    	<li><a href="">Perfil Profesional</a></li>
+	    	<li><?php echo $this->Html->link(
+					   $this->Html->tag('anchor', 'Perfil Profesional'),
+					    array("controller"=>"pages","action"=>"perfilProfesional"),
+					   array('escape' => false)
+					   );
+			 ?></li>
 		    <li><a href="">Portafolio de servicios</a></li>
 	    </ul>
 	</li>
