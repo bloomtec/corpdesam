@@ -60,7 +60,7 @@ class PagesController extends AppController {
 		$this->layout="ajax";
 		$this->set("title","Perfil Profesional");
 		$this->set("fondo","fondo_planeacion.jpg");
-		$this->set("page",$this->Page->findByTitle("Planeación, urbanismo y servicios públicos"));
+		$this->set("page",$this->Page->read(null,8));
 	}
 	function index() {
 		$this->Page->recursive = 0;
