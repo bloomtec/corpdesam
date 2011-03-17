@@ -21,6 +21,8 @@ $(document).ready(function() {
 		'folder':  server+'app/webroot/img',
 		'auto': true,
 		'cancelImg': server+'img/cancel.png',
+		'buttonImg':server+"img/btn_seleccionararchivo.png",
+		'width':126,
 		'onComplete': function(a,b,c,d){
 			if(c.type==".docx"||c.type==".doc"){
 				$(".ext").html('<img src="'+server+'img/simbolo-word.png" /><div class="name">'+c.name+'</div>');
@@ -42,6 +44,7 @@ $(document).ready(function() {
 	'folder':  server+'app/webroot/img',
 	'auto': true,
 	'cancelImg': server+'img/cancel.png',
+	'fileExt'     : '*.doc;*.pdf;*.docx; *.ppt; *.pptx',
 	'onComplete': function(a,b,c,d){
 		$(".preview").html('<img  src="'+d+'" />');
 		var file=d.split("/");

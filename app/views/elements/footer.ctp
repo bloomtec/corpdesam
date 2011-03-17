@@ -55,6 +55,12 @@
 					   array('escape' => false)
 					   );
 			 ?></li>
+			 <li><?php echo $this->Html->link(
+					   $this->Html->tag('anchor', 'Envianos tu hoja de vida'),
+					    array("controller"=>"pages","action"=>"hojaDeVida"),
+					   array('escape' => false)
+					   );
+			 ?></li>
 		    <li><a href="">Portafolio de servicios</a></li>
 	    </ul>
 	</li>

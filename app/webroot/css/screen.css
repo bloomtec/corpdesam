@@ -573,6 +573,7 @@ bottom:0;
     margin-left: 10px;
     text-align: justify;
 	color:black;
+	text-shadow:none;
     text-transform: uppercase;
     width: 750px;
 }
