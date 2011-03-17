@@ -1,5 +1,6 @@
 <div id="intern_content">
-	<h1><?php echo $this->Html->link(
+
+	<h1 class="home"><?php echo $this->Html->link(
 					   $this->Html->tag('anchor', 'home'),
 					    array("controller"=>"/","action"=>"/"),
 					   array('escape' => false)

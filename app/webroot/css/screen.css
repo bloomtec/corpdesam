@@ -442,12 +442,12 @@ img#logo {
 
 
 
-#intern_content h1 {
+#intern_content h1.home {
 	float: right;
 	width: 64px;
 	}
 
-#intern_content  h1 a {
+#intern_content  h1.home a {
 	display: block;
 	width: 64px;
 	height: 17px;
@@ -458,23 +458,46 @@ img#logo {
 
 
 #intern_content .ambiental {
- 	background-image:  url("../img/ambiental.png");
- 	width: 364px;
- 	height: 45px;
- }
-
-#intern_content .mineria {
- 	background-image:  url("../img/mineria.png");
- 	width: 266px;
- 	height: 56px;
- }
-
-#intern_content .educativa {
- 	background-image:  url("../img/educativa.png");
- 	width: 359px;
+ 	background:  url("../img/ambiental.png") no-repeat;
+ 	width: 405px;
  	height: 96px;
  }
 
+#intern_content .mineria {
+ 	background:  url("../img/mineria.png") no-repeat;
+ 	width: 405px;
+ 	height: 96px;
+ }
+
+#intern_content .educativa {
+ 	background:  url("../img/educativa.png") no-repeat;
+ 	width: 405px;
+ 	height: 96px;
+ }
+
+#intern_content .planeacion {
+ 	background:  url("../img/planeacion.png") no-repeat;
+ 	width: 405px;
+ 	height: 96px;
+ }
+
+#intern_content .juridica {
+ 	background:  url("../img/juridica.png") no-repeat;
+ 	width: 405px;
+ 	height: 96px;
+ }
+
+#intern_content .perfil {
+ 	background:  url("../img/perfil.png") no-repeat;
+ 	width: 405px;
+ 	height: 96px;
+ } 
+
+#intern_content .corpdesam {
+ 	background:  url("../img/corpdesam.png") no-repeat;
+ 	width: 405px;
+ 	height: 96px;
+ } 
 
 #intern_content .content_type_1{
 	margin-top:36px;
