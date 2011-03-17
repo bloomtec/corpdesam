@@ -502,7 +502,7 @@ img#logo {
 
 #intern_content .content_type_1{
 	margin-top:14px;
-	background:rgba(0,0,0,0.6);
+	background: url("../img/trama.png") repeat scroll 0 0 transparent;
 	width:770px;
 	font-size: 13px;
  	text-transform: uppercase;
@@ -517,7 +517,7 @@ img#logo {
 
 #intern_content .content_type_2{
 	margin-top:14px;
-	background:rgba(0,0,0,0.6);
+	background: url("../img/trama.png") repeat scroll 0 0 transparent;
  	font-size: 13px;
  	text-transform: uppercase;
  	line-height: 16px;
