@@ -22,7 +22,7 @@ $(function(){
       	 	break;
       	 	
       	 	case "mineria":
-			$("#supersized img").attr("src",server+"img/fondo_mineria.jpg");
+			$("#supersized img").attr("src",server+"img/mineros.jpg");
       	 	break; 
       	 	
       	 	case "educativa":
@@ -39,6 +39,9 @@ $(function(){
       	 	
       	 	case "corpdesam":
 			$("#supersized img").attr("src",server+"img/fondo_portafolio.jpg");
+      	 	break;
+      	 	default:
+      	 	$("#supersized img").attr("src",server+"img/background.jpg");
       	 	break;
       	 	
 		}
