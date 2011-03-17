@@ -42,7 +42,7 @@ $(function(){
       	 	break;
       	 	
       	 	case "corpdesam":
-			$("#supersized img").attr("src",server+"img/fondo_portafolio.jpg");
+			$("#supersized img").attr("src",server+"img/background.jpg");
 			
 			case "planeacion":
 			$("#supersized img").attr("src",server+"img/fondo_planeacion.jpg");
