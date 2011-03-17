@@ -285,6 +285,7 @@ height:100%;
 	top:50%;
 	margin-left: -205px;
 	margin-top: -326px;
+	display:none;
 }
 /** Header **/
 
@@ -314,6 +315,7 @@ height:100%;
 	bottom:137px;
 	position:fixed;
 	width: 100%;
+	display:none;
 }
 
 /** Footer Home **/
@@ -476,10 +478,14 @@ height:100%;
 
 #intern_content .content_type_1{
 	margin-top:36px;
+	background:rgba(255,255,255,0.6);
+	width:770px;
 }
 
 #intern_content .content_type_2{
 	margin-top:14px;
+	background:rgba(255,255,255,0.6);
+ 	width:570px;
 }
 
 

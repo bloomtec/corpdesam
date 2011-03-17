@@ -14,19 +14,19 @@ class PagesController extends AppController {
 		
 	}
 	function educativa(){
-		$this->layout="internas2";
+		$this->layout="ajax";
 		$this->set("title","educativa y social");
 		$this->set("fondo","fondo_educacion.jpg");
 		$this->set("page",$this->Page->findByTitle("educativa y social"));
 	}
 	function ambiental(){
-		$this->layout="internas";
+		$this->layout="ajax";
 		$this->set("title","ambiental");
 		$this->set("fondo","fondo_ambiental.jpg");
 		$this->set("page",$this->Page->findByTitle("ambiental"));
 	}
 	function mineria(){
-		$this->layout="internas";
+		$this->layout="ajax";
 		$this->set("title","mineria");
 		$this->set("fondo","fondo_mineria.jpg");
 		$this->set("page",$this->Page->findByTitle("mineria"));

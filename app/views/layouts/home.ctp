@@ -38,8 +38,10 @@
 		echo $scripts_for_layout;
 	?>
 	<script type="text/javascript">
-	var server="/corpdesam"
+	
+	var server="/corpdesam";
 	$(function(){
+	
 	//Super size
 			$.fn.supersized.options = {  
 				startwidth: 640,  
@@ -63,24 +65,7 @@
 	        });
 	 
 	});
-	$(document).ready(function(){
-		//$("#logo").animate();
 
-		  $('#logo').animate({
-		    left:0,
-		    top: 0,
-		    marginLeft:0,
-		    marginTop:0,
-		    width:410,
-		    height:363,
-		    
-		    
-		  }, 5000, function() {
-		    // Animation complete.
-		  });
-
-
-	});
 	</script>
 </head>
 <body id="home">
@@ -93,9 +78,11 @@
 			<?php echo $this->Session->flash(); ?>
 			<?php echo $content_for_layout; ?>			
 		</div>
-		<div class="bottom"></div>
-		<div id="footer">
-		   <?php echo $this->element("footer");?>
+		<div class="footer">
+			<div class="bottom"></div>
+			<div id="footer">
+			   <?php echo $this->element("footer");?>
+			</div>
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>

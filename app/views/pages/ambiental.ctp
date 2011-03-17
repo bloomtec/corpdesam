@@ -8,3 +8,9 @@ Desde el punto de vista objetivo, dícese del conjunto de leyes, reglamentos y d
 	</div>
 </div>
 
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#supersized img").attr(server+'/img/<?php echo $fondo?>);
+	});
+</script>
