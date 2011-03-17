@@ -458,61 +458,65 @@ img#logo {
 
 
 #intern_content .ambiental {
- 	background:  url("../img/ambiental.png") no-repeat;
+ 	background:  url("../img/ambiental.png") no-repeat left bottom;
  	width: 405px;
  	height: 96px;
  }
 
 #intern_content .mineria {
- 	background:  url("../img/mineria.png") no-repeat;
+ 	background:  url("../img/mineria.png") no-repeat left bottom;
  	width: 405px;
  	height: 96px;
  }
 
 #intern_content .educativa {
- 	background:  url("../img/educativa.png") no-repeat;
+ 	background:  url("../img/educativa.png") no-repeat left bottom;
  	width: 405px;
  	height: 96px;
  }
 
 #intern_content .planeacion {
- 	background:  url("../img/planeacion.png") no-repeat;
+ 	background:  url("../img/planeacion.png") no-repeat left bottom;
  	width: 405px;
  	height: 96px;
  }
 
 #intern_content .juridica {
- 	background:  url("../img/juridica.png") no-repeat;
+ 	background:  url("../img/juridica.png") no-repeat left bottom;
  	width: 405px;
  	height: 96px;
  }
 
 #intern_content .perfil {
- 	background:  url("../img/perfil.png") no-repeat;
- 	width: 405px;
+ 	background:  url("../img/perfil.png") no-repeat left bottom;
+ 	width: 428px;
  	height: 96px;
  } 
 
 #intern_content .corpdesam {
- 	background:  url("../img/corpdesam.png") no-repeat;
+ 	background:  url("../img/corpdesam.png") no-repeat left bottom;
  	width: 405px;
  	height: 96px;
  } 
 
 #intern_content .content_type_1{
-	margin-top:36px;
-	background:rgba(255,255,255,0.6);
+	margin-top:14px;
+	background:rgba(0,0,0,0.6);
 	width:770px;
+	font-size: 13px;
+ 	text-transform: uppercase;
+ 	line-height: 16px;
+    text-shadow: 2px 2px 2px #000;
+    width:750px;
+    margin-left:10px;
+    text-align: justify;
+    color:#F5FFFA;
+    padding:10px;
 }
 
 #intern_content .content_type_2{
 	margin-top:14px;
-	background:rgba(255,255,255,0.6);
- 	width:570px;
-}
-
-
-#intern_content .content_type_2 p {
+	background:rgba(0,0,0,0.6);
  	font-size: 13px;
  	text-transform: uppercase;
  	line-height: 16px;
@@ -520,17 +524,18 @@ img#logo {
     width:550px;
     margin-left:10px;
     text-align: justify;
+    color:#F5FFFA;
+    padding:10px;
+}
+
+
+#intern_content .content_type_2 p {
+ 	
  }
 
 
 #intern_content .content_type_1 p {
- 	font-size: 13px;
- 	text-transform: uppercase;
- 	line-height: 16px;
-    text-shadow: 2px 2px 2px #000;
-    width:750px;
-    margin-left:10px;
-    text-align: justify;
+ 	
  } 
 /** End Intern Content **/ 
 
