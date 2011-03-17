@@ -6,7 +6,7 @@
 					   );
 			 ?></h1>
 	<div class="perfil"></div>
-	<div class="content_type_1 perfil-profesional">
+	<div class="content_type_1">
 	<?php echo $page["Page"]["content"]?>
 		
 	</div>
