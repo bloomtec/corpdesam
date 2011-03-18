@@ -18,8 +18,11 @@ Website: www.buildinternet.com/project/supersized
 	    border:none;
 	}
 	body {
-	    overflow:hidden;/*Needed to eliminate scrollbars*/
+	 /*   overflow:hidden;/*Needed to eliminate scrollbars*/
 	    background:#fff;
+	}
+	body#home{
+		overflow: hidden;
 	}
 	/*Area to place content normally*/
 	#content-wrapper{ 

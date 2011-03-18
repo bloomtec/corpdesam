@@ -55,7 +55,13 @@ $(function(){
       	 	
 		}
 		$(".bottom").hide("slow",function(){
+			$("#footer").animate({"bottom":-71},"slow");
 			$("#content").load(ruta);
+			if($(window).height()<600){
+				$("body").css("overflow","scroll");
+			}else{
+				$("body").css("overflow","hidden");
+			}
 		});
 		
 		return false;

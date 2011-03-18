@@ -32,7 +32,7 @@ class PagesController extends AppController {
 		$this->set("page",$this->Page->findByTitle("ambiental"));
 	}
 	function mineria(){
-		$this->layout="ajax";
+		$this->layout="internas";
 		$this->set("title","mineria");
 		$this->set("fondo","mineros.jpg");
 		$this->set("page",$this->Page->findByTitle("mineria"));
@@ -59,7 +59,6 @@ class PagesController extends AppController {
 	function planeacion(){
 		$this->layout="ajax";
 		$this->set("title","Perfil Profesional");
-		$this->set("fondo","fondo_planeacion.jpg");
 		$this->set("page",$this->Page->read(null,8));
 	}
 	function index() {

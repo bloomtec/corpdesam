@@ -82,12 +82,7 @@ th a {
 	padding: 2px 4px;
 	text-decoration: none;
 }
-th a.asc:after {
-	content: ' ⇣';
-}
-th a.desc:after {
-	content: ' ⇡';
-}
+
 table tr td {
 	background: #fff;
 	padding: 6px;
@@ -245,7 +240,7 @@ form .submit input[type=submit]:hover {
 
 /** Start Home **/
 #content{
-	min-height: 900px;
+	min-height: 800px;
 	
 }
 .color_home{
@@ -543,10 +538,10 @@ img#logo {
 /** Intern Footer **/
 
 #intern_footer{
-background: url("../img/logo-interno.png") right no-repeat;
+background: url("../img/logo-interno.png") left no-repeat;
 position:fixed;
 width: 100%;
-height:191px;
+height:60px;
 bottom:0;
 }
 .hoja-de-vida{
