@@ -22,7 +22,7 @@ $(function(){
       	 	break;
       	 	
       	 	case "mineria":
-			$("#supersized img").attr("src",server+"img/fondo_mineria.jpg");
+			$("#supersized img").attr("src",server+"img/mineros.jpg");
       	 	break; 
       	 	
       	 	case "educativa":
@@ -37,13 +37,31 @@ $(function(){
 			$("#supersized img").attr("src",server+"img/fondo_portafolio.jpg");
       	 	break;
       	 	
+      	 	case "perfilProfesional":
+			$("#supersized img").attr("src",server+"img/fondo_perfil.jpg");
+      	 	break;
+      	 	
       	 	case "corpdesam":
-			$("#supersized img").attr("src",server+"img/fondo_portafolio.jpg");
+			$("#supersized img").attr("src",server+"img/background.jpg");
+			break;
+			
+			case "planeacion":
+			$("#supersized img").attr("src",server+"img/fondo_planeacion.jpg");
+      	 	break;
+      	 	
+      	 	default:
+      	 	$("#supersized img").attr("src",server+"img/background.jpg");
       	 	break;
       	 	
 		}
 		$(".bottom").hide("slow",function(){
+			$("#footer").animate({"bottom":-71},"slow");
 			$("#content").load(ruta);
+			if($(window).height()<600){
+				$("body").css("overflow","scroll");
+			}else{
+				$("body").css("overflow","hidden");
+			}
 		});
 		
 		return false;

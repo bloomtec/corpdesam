@@ -23,7 +23,7 @@
 
 /** General Style Info **/
 body {
-	background: #003d4c;
+
 	color: #fff;
 	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
 	font-size:90%;
@@ -47,17 +47,17 @@ h1, h2, h3, h4 {
 }
 h1 {
 	background:#fff;
-	color: #003d4c;
+	color: #1c2b69;
 	font-size: 100%;
 }
 h2 {
 	background:#fff;
-	color: #e32;
+	color: #1c2b69;
 	font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
 	font-size: 190%;
 }
 h3 {
-	color: #993;
+	color: #1c2b69;
 	font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
 	font-size: 165%;
 }
@@ -96,7 +96,9 @@ ul, li {
 	text-decoration: underline;
 }
 #header .logo{
-	background: #003d4c url('../img/logo_cms.png') no-repeat left;
+	background: url('../img/logo_cms.png') no-repeat left;
+	float:left;
+	width:450px;
 }
 #header .logout{
 	float: right;
@@ -106,7 +108,7 @@ ul, li {
 	float: right;
 }
 #content{
-	background: #fff;
+
 	clear: both;
 	color: #333;
 	padding: 10px 20px 40px 20px;
@@ -276,7 +278,7 @@ fieldset {
 }
 fieldset legend {
 	background:#fff;
-	color: #e32;
+	color: #1c2b69;
 	font-size: 160%;
 	font-weight: bold;
 }
@@ -300,7 +302,7 @@ form div {
 	vertical-align: text-top;
 }
 form .input {
-	color: #444;
+	color:  #1c2b69;
 }
 form .required {
 	font-weight: bold;
@@ -447,20 +449,20 @@ td.actions a {
 	padding: 4px 8px;
 	background:#e6e49f;
 	background: -webkit-gradient(linear, left top, left bottom, from(#f1f1d4), to(#e6e49f));
-	background-image: -moz-linear-gradient(top, #f1f1d4, #e6e49f);
+	background-image: -moz-linear-gradient(top, #d0d9e8, #a5bfe5);
 	color:#333;
-	border:1px solid #aaac62;
+	border:1px solid #a5bfe5;
 	-webkit-border-radius:8px;
 	-moz-border-radius:8px;
 	border-radius:8px;
 	text-decoration:none;
-	text-shadow: #fff 0px 1px 0px;
 	min-width: 0;
 }
 input[type=submit]:hover,
 div.actions ul li a:hover,
 td.actions a:hover {
-	background: #f0f09a;
+	color:white;
+	background:  #6b84a9;
 	background: -webkit-gradient(linear, left top, left bottom, from(#f7f7e1), to(#eeeca9));
 }
 
@@ -731,4 +733,12 @@ li.sfHover > a > .sf-sub-indicator {
 }
 .sf-shadow ul.sf-shadow-off {
 	background: transparent;
+}
+.login{
+	width: 500px;
+	margin: 0 auto;
+}
+.login h1{
+	font-size: 20px;
+	font-weight: bold;
 }

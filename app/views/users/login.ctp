@@ -1,5 +1,5 @@
 <div class="login">
-	<h1> <?php __("Acces to de CMS")?> </h1>
+	<h1> <?php __("Ingreso al Admistrador de Contenido")?> </h1>
 <?php echo $session->flash('auth'); ?>
 <?php echo $this->Form->create('User');?>
 	<fieldset>

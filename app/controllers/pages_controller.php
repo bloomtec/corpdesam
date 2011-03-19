@@ -3,16 +3,21 @@ class PagesController extends AppController {
 
 	var $name = 'Pages';
 	var $uses=array("Page");
-	function beforeFilter()
-	{
+	function beforeFilter(){
 		parent::beforeFilter();
-		$this->Auth->allow('home','educativa','ambiental','mineria');
+		$this->Auth->allow('planeacion','home','educativa','ambiental','mineria','hojaDeVida','perfilProfesional','corpdesam','juridica');
 
 	}
+	
 	function home(){
 		$this->layout="home";
 		$this->set("title","home");
 		
+	}
+	function hojaDeVida(){
+		$this->layout="ajax";
+		$this->set("title","Envianos tu hoja de vida");
+		$this->set("fondo","background.jpg");
 	}
 	function educativa(){
 		$this->layout="ajax";
@@ -27,35 +32,34 @@ class PagesController extends AppController {
 		$this->set("page",$this->Page->findByTitle("ambiental"));
 	}
 	function mineria(){
-		$this->layout="ajax";
+		$this->layout="internas";
 		$this->set("title","mineria");
-		$this->set("fondo","fondo_mineria.jpg");
+		$this->set("fondo","mineros.jpg");
 		$this->set("page",$this->Page->findByTitle("mineria"));
 		
 	}
 	function perfilProfesional(){
 		$this->layout="ajax";
 		$this->set("title","Perfil Profesional");
-		$this->set("fondo","fondo_perfil_profesional.jpg");
+		$this->set("fondo","fondo_background.jpg");
 		$this->set("page",$this->Page->findByTitle("perfil profesional"));
 	}
 	function corpdesam(){
 		$this->layout="ajax";
 		$this->set("title","Perfil Profesional");
-		$this->set("fondo","fondo_perfil_profesional.jpg");
+		$this->set("fondo","fondo_corpdesam.jpg");
 		$this->set("page",$this->Page->findByTitle("corpdesam"));
 	}
 	function juridica(){
 		$this->layout="ajax";
 		$this->set("title","Perfil Profesional");
-		$this->set("fondo","fondo_perfil_profesional.jpg");
+		$this->set("fondo","fondo_juridica.jpg");
 		$this->set("page",$this->Page->findByTitle("juridica"));
 	}
 	function planeacion(){
 		$this->layout="ajax";
 		$this->set("title","Perfil Profesional");
-		$this->set("fondo","fondo_perfil_profesional.jpg");
-		$this->set("page",$this->Page->findByTitle("Planeación, urbanismo y servicios públicos"));
+		$this->set("page",$this->Page->read(null,8));
 	}
 	function index() {
 		$this->Page->recursive = 0;

@@ -82,12 +82,7 @@ th a {
 	padding: 2px 4px;
 	text-decoration: none;
 }
-th a.asc:after {
-	content: ' ⇣';
-}
-th a.desc:after {
-	content: ' ⇡';
-}
+
 table tr td {
 	background: #fff;
 	padding: 6px;
@@ -245,7 +240,7 @@ form .submit input[type=submit]:hover {
 
 /** Start Home **/
 #content{
-	min-height: 900px;
+	min-height: 800px;
 	
 }
 .color_home{
@@ -372,7 +367,7 @@ img#logo {
 
 #footer  .main-nav	li ul { 
 	display: none; 
-	top: -416px;
+	top: -462px;
 	left:0px;
 	}
 
@@ -442,12 +437,12 @@ img#logo {
 
 
 
-#intern_content h1 {
+#intern_content h1.home {
 	float: right;
 	width: 64px;
 	}
 
-#intern_content  h1 a {
+#intern_content  h1.home a {
 	display: block;
 	width: 64px;
 	height: 17px;
@@ -458,38 +453,66 @@ img#logo {
 
 
 #intern_content .ambiental {
- 	background-image:  url("../img/ambiental.png");
- 	width: 364px;
- 	height: 45px;
- }
-
-#intern_content .mineria {
- 	background-image:  url("../img/mineria.png");
- 	width: 266px;
- 	height: 56px;
- }
-
-#intern_content .educativa {
- 	background-image:  url("../img/educativa.png");
- 	width: 359px;
+ 	background:  url("../img/ambiental.png") no-repeat left bottom;
+ 	width: 405px;
  	height: 96px;
  }
 
+#intern_content .mineria {
+ 	background:  url("../img/mineria.png") no-repeat left bottom;
+ 	width: 405px;
+ 	height: 96px;
+ }
+
+#intern_content .educativa {
+ 	background:  url("../img/educativa.png") no-repeat left bottom;
+ 	width: 405px;
+ 	height: 96px;
+ }
+
+#intern_content .planeacion {
+ 	background:  url("../img/planeacion.png") no-repeat left center;
+ 	width: 562px;
+ 	height: 96px;
+ }
+
+#intern_content .juridica {
+ 	background:  url("../img/juridica.png") no-repeat left center;
+ 	width: 405px;
+ 	height: 96px;
+ }
+
+#intern_content .perfil {
+ 	background:  url("../img/perfil.png") no-repeat left center;
+ 	width: 410px;
+ 	height: 99px;
+ } 
+
+#intern_content .corpdesam {
+ 	background:  url("../img/corpdesam.png") no-repeat left bottom;
+ 	width: 405px;
+ 	height: 96px;
+ } 
+
 
 #intern_content .content_type_1{
-	margin-top:36px;
-	background:rgba(255,255,255,0.6);
+	margin-top:14px;
+	background: url("../img/trama.png") repeat scroll 0 0 transparent;
 	width:770px;
+	font-size: 13px;
+ 	text-transform: uppercase;
+ 	line-height: 16px;
+    text-shadow: 2px 2px 2px #000;
+    width:750px;
+    margin-left:10px;
+    text-align: justify;
+    color:#F5FFFA;
+    padding:10px;
 }
 
 #intern_content .content_type_2{
 	margin-top:14px;
-	background:rgba(255,255,255,0.6);
- 	width:570px;
-}
-
-
-#intern_content .content_type_2 p {
+	background: url("../img/trama.png") repeat scroll 0 0 transparent;
  	font-size: 13px;
  	text-transform: uppercase;
  	line-height: 16px;
@@ -497,27 +520,28 @@ img#logo {
     width:550px;
     margin-left:10px;
     text-align: justify;
+    color:#F5FFFA;
+    padding:10px;
+}
+
+
+#intern_content .content_type_2 p {
+ 	
  }
 
 
 #intern_content .content_type_1 p {
- 	font-size: 13px;
- 	text-transform: uppercase;
- 	line-height: 16px;
-    text-shadow: 2px 2px 2px #000;
-    width:750px;
-    margin-left:10px;
-    text-align: justify;
+ 	
  } 
 /** End Intern Content **/ 
 
 /** Intern Footer **/
 
 #intern_footer{
-background: url("../img/logo-interno.png") right no-repeat;
+background: url("../img/logo-interno.png") left no-repeat;
 position:fixed;
 width: 100%;
-height:191px;
+height:60px;
 bottom:0;
 }
 .hoja-de-vida{
@@ -542,6 +566,7 @@ bottom:0;
 }
 .hoja-de-vida form{
 	color: black;
+	margin-top:20px;
 }
 .hoja-de-vida .submit{
 	display:none;
@@ -552,16 +577,34 @@ bottom:0;
 .inputs label{
  	display: block;
     float: left;
-    width: 110px;
+    width: 150px;
     margin-left: 10px;
+    font-size: 12px;
+    font-weight: bold;
 }
 .archivo{
 }
 .ext img{
 	width: 60px;
-	 height: 80px;
+	height: 80px;
 }
 .archivo .ext{
  	height: 120px;
+}
+#intern_content .perfil-profesional p{
+	font-size: 13px;
+    line-height: 16px;
+    margin-left: 10px;
+    text-align: justify;
+	color:black;
+	text-shadow:none;
+    text-transform: uppercase;
+    width: 750px;
+}
+#intern_content .perfil-profesional{
+	padding-top: 25px;
+}
+#intern_content .input{
+	margin:10px;
 }
 /** End Intern Footer **/
