@@ -114,7 +114,8 @@ padding-left: 1em;
 padding-right: 0.5em;
 }**/
 
-input{
+input, textarea{
+width: 200px;
 
 }
 select {
@@ -574,13 +575,19 @@ bottom:0;
 .archivo, .inputs{
 	float:left;
 }
-.inputs label{
+.archivo{
+ width: 400px;
+ }
+.inputs label, .archivo label{
  	display: block;
     float: left;
     width: 150px;
     margin-left: 10px;
     font-size: 12px;
     font-weight: bold;
+}
+.archivo label{
+	width: 100px;
 }
 .archivo{
 }

@@ -96,7 +96,7 @@ ul, li {
 	text-decoration: underline;
 }
 #header .logo{
-	background: url('../img/logo_cms.png') no-repeat left;
+	/*background: url('../img/logo_cms.PNG') no-repeat left;*/
 	float:left;
 	width:450px;
 }

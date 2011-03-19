@@ -1,5 +1,5 @@
 .archivo{
-	width: 400px;
+	width: 350px;
 }
 #intern_content .titulo_perfil_profesional {
     background-image: url("../img/titulo_perfil_profesional.png");
@@ -8,7 +8,12 @@
 }
 .uploader-container{
  float:left;
+ position: relative;
+ width: 140px;
 
+}
+#subir-archivoQueue{
+position: absolute;
 }
 .enviar{
 	margin-left:20px;
@@ -28,7 +33,19 @@
 	color: red;
     font-size: 15px;
     font-weight: bold;
-    margin: 0 auto;
+    margin-left: 10px;
     width: 370px;
     display:none;
+}
+.error em {
+	display:block;
+	width:0;
+	height:0;
+	border:10px solid;
+	border-color:#FFFE36 transparent transparent;
+
+	/* positioning */
+	position:absolute;
+	bottom:-17px;
+	left:60px;
 }

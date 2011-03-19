@@ -5,7 +5,7 @@
 	 		<legend><?php __('Modificar Pagina'); ?></legend>
 		<?php
 			echo $this->Form->input('id');
-		//	echo $this->Form->input('title',array("div"=>"float"));
+			echo $this->Form->input('title',array("div"=>"float"));
 		//	echo $this->Form->input('slug',array("div"=>"float"));
 			//echo $this->Form->input('description',array("div"=>"float"));
 			//echo $this->Form->input('locale',array("div"=>"float","options"=>array("en_us"=>"English","es_es"=>"Spanish")));

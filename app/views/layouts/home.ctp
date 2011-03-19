@@ -33,6 +33,7 @@
 		echo $this->Html->css('supersized');
 		echo $this->Html->script("jquery.js");
 		echo $this->Html->script("jquery.uploadify.v2.1.4.min.js");
+		echo $this->Html->script("jquery.tools.min.js");
 		echo $this->Html->script("supersized.3.0.core.js");
 		echo $this->Html->script("swfobject.js");
 		//echo $this->Html->script("upload.js");

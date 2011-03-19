@@ -23,7 +23,7 @@
 	<?php echo $this->Html->charset(); ?>
 	<title>
 		<?php __($PAGE_TITLE); ?>
-		<?php echo $title_for_layout; ?>
+
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
@@ -47,7 +47,7 @@
 		<div id="header">
 			<div class="logo">
 				<?php echo $this->Html->link(
-					$this->Html->image('logo_cms.png', array('alt'=> __('CMS: Naru', true), 'border' => '0')),
+					$this->Html->image('logo_cms.PNG', array('alt'=> __('CMS: Corpdesam', true), 'border' => '0')),
 					array("controller"=>"users","action"=>"menu"),
 					array('target' => '_blank', 'escape' => false)
 				);
@@ -61,7 +61,7 @@
 				</li>
 				<li><?php echo $html->link("Datos de Usaurio",array("controller"=>"users","action"=>"edit",1)); ?></li>
 				<li><?php echo $html->link("Hojas de vida",array("controller"=>"archivos","action"=>"index")); ?></li>
-				<li><?php echo $html->link("Fromulario de contacto",array("controller"=>"user","action"=>"config",1)); ?></li>
+				<!-- <li><?php //echo $html->link("Fromulario de contacto",array("controller"=>"user","action"=>"config",1)); ?></li>-->
 				<li><?php echo $html->link(__("logout",true),array("controller"=>"users","action"=>"logout"),array("class"=>"logout"))?><li> 
 			</ul>
 			<?php endif;?>

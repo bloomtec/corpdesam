@@ -2,7 +2,10 @@
 class ArchivosController extends AppController {
 
 	var $name = 'Archivos';
-
+	function beforeFilter(){
+		parent::beforeFilter();
+		$this->Auth->allow("ajaxAdd");
+	}
 	function index() {
 		$this->Archivo->recursive = 0;
 		$this->set('archivos', $this->paginate());
@@ -75,16 +78,16 @@ class ArchivosController extends AppController {
 		}
 	}
 
-	function delete($id = null) {
+	function admin_delete($id = null) {
 		if (!$id) {
-			$this->Session->setFlash(__('Invalid id for archivo', true));
+			$this->Session->setFlash(__('Archivo no valido', true));
 			$this->redirect(array('action'=>'index'));
 		}
 		if ($this->Archivo->delete($id)) {
-			$this->Session->setFlash(__('Archivo deleted', true));
+			$this->Session->setFlash(__('Archivo borrado', true));
 			$this->redirect(array('action'=>'index'));
 		}
-		$this->Session->setFlash(__('Archivo was not deleted', true));
+		$this->Session->setFlash(__('El archivo no fue borrado', true));
 		$this->redirect(array('action' => 'index'));
 	}
 	function admin_index() {
@@ -130,17 +133,6 @@ class ArchivosController extends AppController {
 		}
 	}
 
-	function admin_delete($id = null) {
-		if (!$id) {
-			$this->Session->setFlash(__('Invalid id for archivo', true));
-			$this->redirect(array('action'=>'index'));
-		}
-		if ($this->Archivo->delete($id)) {
-			$this->Session->setFlash(__('Archivo deleted', true));
-			$this->redirect(array('action'=>'index'));
-		}
-		$this->Session->setFlash(__('Archivo was not deleted', true));
-		$this->redirect(array('action' => 'index'));
-	}
+	
 }
 ?>
