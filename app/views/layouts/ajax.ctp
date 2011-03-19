@@ -17,8 +17,8 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 ?>
-<?php echo $this->Html->css('uploadify');?>
-<?php echo $this->Html->script("jquery.uploadify.v2.1.4.min.js"); ?>
-<?php echo $this->Html->script("swfobject.js");?>
+<?php  //echo $this->Html->css('uploadify');?>
+<?php //echo $this->Html->script("jquery.uploadify.v2.1.4.min.js"); ?>
+<?php //echo $this->Html->script("swfobject.js");?>
 <?php echo $this->Html->script("upload.js"); ?>
 <?php echo $content_for_layout; ?>
