@@ -22,36 +22,60 @@ $(function(){
       	 	break;
       	 	
       	 	case "mineria":
-			$("#supersized img").attr("src",server+"img/mineros.jpg");
+      	 	$("#supersized img").fadeOut("slow",function(){
+				$("#supersized img").attr("src",server+"img/mineros.jpg");
+			$(this).fadeIn("slow");
+			});
       	 	break; 
       	 	
       	 	case "educativa":
-			$("#supersized img").attr("src",server+"img/fondo_educacion.jpg");
+      	 	$("#supersized img").fadeOut("slow",function(){
+				$("#supersized img").attr("src",server+"img/fondo_educacion.jpg");
+				$(this).fadeIn("slow");
+			});
       	 	break; 
       	 	
       	 	case "juridica":
-			$("#supersized img").attr("src",server+"img/fondo_juridica.jpg");
+      	 	$("#supersized img").fadeOut("slow",function(){
+				$("#supersized img").attr("src",server+"img/fondo_juridica.jpg");
+			$(this).fadeIn("slow");
+			});
       	 	break; 
       	 	
       	 	case "portafolio":
-			$("#supersized img").attr("src",server+"img/fondo_portafolio.jpg");
-      	 	break;
+      	 	$("#supersized img").fadeOut("slow",function(){
+				$("#supersized img").attr("src",server+"img/fondo_portafolio.jpg");
+      	 	$(this).fadeIn("slow");
+			});
+			break;
       	 	
       	 	case "perfilProfesional":
-			$("#supersized img").attr("src",server+"img/fondo_perfil.jpg");
-      	 	break;
+      	 	$("#supersized img").fadeOut("slow",function(){
+				$("#supersized img").attr("src",server+"img/fondo_perfil.jpg");
+      	 	$(this).fadeIn("slow");
+			});
+			break;
       	 	
       	 	case "corpdesam":
-			$("#supersized img").attr("src",server+"img/background.jpg");
+			$("#supersized img").fadeOut("slow",function(){
+				$("#supersized img").attr("src",server+"img/background.jpg");
+			$(this).fadeIn("slow");
+			});
 			break;
 			
 			case "planeacion":
-			$("#supersized img").attr("src",server+"img/fondo_planeacion.jpg");
-      	 	break;
+			$("#supersized img").fadeOut("slow",function(){
+				$("#supersized img").attr("src",server+"img/fondo_planeacion.jpg");
+      	 	$(this).fadeIn("slow");
+			});
+			break;
       	 	
       	 	default:
-      	 	$("#supersized img").attr("src",server+"img/background.jpg");
-      	 	break;
+      	 	$("#supersized img").fadeOut("slow",function(){
+      	 		$("#supersized img").attr("src",server+"img/background.jpg");
+      	 	$(this).fadeIn("slow");
+			});
+			break;
       	 	
 		}
 		$(".bottom").hide("slow",function(){

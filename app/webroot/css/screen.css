@@ -615,3 +615,6 @@ bottom:0;
 	margin:10px;
 }
 /** End Intern Footer **/
+#intern_content li{
+margin-top: 1em;
+}

@@ -32,6 +32,7 @@
 		echo $this->Html->css('uploadify'); //EStilos del layout
 		echo $this->Html->css('supersized');
 		echo $this->Html->script("jquery.js");
+		echo $this->Html->script("efectos.js");
 		echo $this->Html->script("jquery.uploadify.v2.1.4.min.js");
 		echo $this->Html->script("jquery.tools.min.js");
 		echo $this->Html->script("supersized.3.0.core.js");

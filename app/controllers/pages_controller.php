@@ -32,7 +32,7 @@ class PagesController extends AppController {
 		$this->set("page",$this->Page->findByTitle("ambiental"));
 	}
 	function mineria(){
-		$this->layout="internas";
+		$this->layout="ajax";
 		$this->set("title","mineria");
 		$this->set("fondo","mineros.jpg");
 		$this->set("page",$this->Page->findByTitle("mineria"));
