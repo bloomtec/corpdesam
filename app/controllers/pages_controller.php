@@ -10,8 +10,9 @@ class PagesController extends AppController {
 	}
 	
 	function home(){
-		$this->layout="home";
 		$this->set("title","home");
+		$this->set("page",$this->Page->findBySlug("home"));
+		$this->set("fondo","fondo_home.jpg");
 		
 	}
 	function hojaDeVida(){
@@ -19,45 +20,49 @@ class PagesController extends AppController {
 		$this->set("title","Envianos tu hoja de vida");
 		$this->set("fondo","background.jpg");
 	}
-	function educativa(){
-		$this->layout="ajax";
-		$this->set("title","educativa y social");
-		$this->set("fondo","fondo_educacion.jpg");
-		$this->set("page",$this->Page->findByTitle("educativa y social"));
-	}
-	function ambiental(){
-		$this->layout="ajax";
-		$this->set("title","ambiental");
-		$this->set("fondo","fondo_ambiental.jpg");
-		$this->set("page",$this->Page->findByTitle("ambiental"));
-	}
-	function mineria(){
-		$this->layout="ajax";
-		$this->set("title","mineria");
-		$this->set("fondo","mineros.jpg");
-		$this->set("page",$this->Page->findByTitle("mineria"));
-		
-	}
-	function perfilProfesional(){
-		$this->layout="ajax";
-		$this->set("title","Perfil Profesional");
-		$this->set("fondo","fondo_background.jpg");
-		$this->set("page",$this->Page->findByTitle("perfil profesional"));
-	}
 	function corpdesam(){
 		$this->layout="ajax";
 		$this->set("title","Perfil Profesional");
 		$this->set("fondo","fondo_corpdesam.jpg");
-		$this->set("page",$this->Page->findByTitle("corpdesam"));
+		$this->set("page",$this->Page->findBySlug("corpdesam"));
+	}
+	function ambiental(){
+		//$this->layout="ajax";
+		$this->set("title","ambiental");
+		$this->set("fondo","fondo_ambiental.jpg");
+		$this->set("page",$this->Page->findBySlug("ambiental"));
 	}
 	function juridica(){
-		$this->layout="ajax";
+		//$this->layout="ajax";
 		$this->set("title","Perfil Profesional");
 		$this->set("fondo","fondo_juridica.jpg");
-		$this->set("page",$this->Page->findByTitle("juridica"));
+		$this->set("page",$this->Page->findBySlug("juridica"));
 	}
+	function mineria(){
+		//$this->layout="ajax";
+		$this->set("title","mineria");
+		$this->set("fondo","mineros.jpg");
+		$this->set("page",$this->Page->findBySlug("mineria"));
+		
+	}
+	function educativa(){
+		//$this->layout="ajax";
+		$this->set("title","educativa y social");
+		$this->set("fondo","fondo_educacion.jpg");
+		$this->set("page",$this->Page->findBySlug("educativa"));
+	}
+
+
+	function perfilProfesional(){
+		//$this->layout="ajax";
+		$this->set("title","Perfil Profesional");
+		$this->set("fondo","fondo_background.jpg");
+		$this->set("page",$this->Page->findBySlug("perfil"));
+	}
+
+
 	function planeacion(){
-		$this->layout="ajax";
+		//$this->layout="ajax";
 		$this->set("title","Perfil Profesional");
 		$this->set("page",$this->Page->read(null,8));
 	}

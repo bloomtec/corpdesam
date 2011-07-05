@@ -27,58 +27,53 @@
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
-
 		echo $this->Html->css('front');
-		echo $this->Html->css('layout'); //EStilos del layout
-		echo $this->Html->css('supersized');
 		echo $this->Html->script("https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js");
-		echo $this->Html->script("supersized.3.0.core.js");
 		echo $this->Html->script("front.js");
 
 		echo $scripts_for_layout;
 	?>
-	<script type="text/javascript">
-	var server="/corpdesam"
-	$(function(){
-	//Super size
-			$.fn.supersized.options = {  
-				startwidth: 800,  
-				startheight: 600,
-				vertical_center: 1,
-				slideshow: 1,
-				navigation: 1,
-				thumbnail_navigation: 1,
-				transition: 1, //0-None, 1-Fade, 2-slide top, 3-slide right, 4-slide bottom, 5-slide left
-				pause_hover: 0,
-				slide_counter: 1,
-				slide_captions: 1,
-				slide_interval: 3000,
-				slides : [
-					{image : server+'/img/<?php echo $fondo?>', title : 'cielo', url : 'http://www.flickr.com/photos/wumbus/4582735030/in/set-72157623876357531/'}
-				]
-			};
-	        $('#supersized').supersized();  
-	         $(".image-box img").live("click",function(){
-	        	$('#supersized img').attr("src",$(this).attr("src"));
-	        });
-	 
-	});
-	</script>
+	
 </head>
 <body id="home">
 	<div id="supersized"></div>
 	<div id="container">
 		<div id="header">
-		  <?php echo $this->element("header");?>
+			<ul class="links">
+				<li><?php echo $html->link("CVC","http://www.cvc.gov.co");?></li>
+				<li><?php echo $html->link("Ministerio de Ambiente","http://www.cvc.gov.co");?></li>
+			</ul>
+			<ul class="social">
+				<li><?php echo $html->link($html->image("facebook.png"),"http://facebook.com",array("escape"=>false));?></li>
+				<li><?php echo $html->link($html->image("twitter.png"),"http://facebook.com",array("escape"=>false));?></li>
+			</ul>
 		</div>
 		<div id="content">
-			<?php echo $this->Session->flash(); ?>
-			<?php echo $content_for_layout; ?>			
+			<div id="page" class="<?php echo $page["Page"]["slug"]?>">
+				<div id="logo"></div>
+				<div id="contenido"  style="<?php if(!empty($page["Page"]["fondo"])){ echo "background: url(/corpdesam/img/".$page["Page"]["fondo"].");";} ?>">
+					<h2 class="titulo"><?php echo strtoupper($page["Page"]["title"]);?></h2>
+					<div class="wysiwyg">
+						<?php echo $content_for_layout; ?>
+					</div>
+				</div>
+			</div>
+						
 		</div>
 		<div id="footer">
-		   <?php echo $this->element("footer");?>
+			<ul id="nav">
+				<li> <?php echo $html->link("",array("controller"=>"pages","action"=>"ambiental"),array("class"=>"ambiental"));?></li>
+				<li> <?php echo $html->link("",array("controller"=>"pages","action"=>"juridica"),array("class"=>"juridica"));?></li>
+				<li> <?php echo $html->link("",array("controller"=>"pages","action"=>"mineria"),array("class"=>"mineria"));?></li>
+				<li> <?php echo $html->link("",array("controller"=>"pages","action"=>"educativa"),array("class"=>"educativa"));?></li>
+				<li> <?php echo $html->link("",array("controller"=>"pages","action"=>"perfilProfesional"),array("class"=>"perfil"));?></li>
+				<li> <?php echo $html->link("",array("controller"=>"pages","action"=>"planeacion"),array("class"=>"planeacion"));?></li>
+				<li> <?php echo $html->link("",array("controller"=>"pages","action"=>"home"),array("class"=>"home"));?></li>
+			</ul>
+		</div>
+		<div id="animado" rel="<?php echo $page["Page"]["till"]?>">
+			<?php echo $html->image($page["Page"]["animacion"]);?>
 		</div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
 </body>
 </html>
