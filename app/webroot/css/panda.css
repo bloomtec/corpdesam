@@ -3,9 +3,18 @@
 	width: 1057px;
 	height: 797px;
 	overflow:hidden;
-	background: url(../img/fondo_standar.jpg);
+	
 	background-position:center;
 	background-repeat:no-repeat;
+	margin: 0 auto;
+}
+#flash{
+	position:absolute;
+	width: 1057px;
+	height: 797px;
+	overflow:hidden;
+	background:black;
+	z-index:0;
 	margin: 0 auto;
 }
 #header{
