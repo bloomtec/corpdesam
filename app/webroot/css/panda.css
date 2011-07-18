@@ -53,7 +53,7 @@
 #contenido{
 	width: 585px;
 	height:509px;
-	background: url(../img/contenido_standar.png);
+/*	background: url(../img/contenido_standar.png); */
 	margin: 0 auto;
 	position: relative
 

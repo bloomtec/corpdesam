@@ -57,7 +57,7 @@
 		<div id="content">
 			<div id="page" class="<?php echo $page["Page"]["slug"]?>">
 				<div id="logo"></div>
-				<div id="contenido"  style="<?php if(!empty($page["Page"]["fondo"])){ echo "background: url(/corpdesam/img/".$page["Page"]["fondo"].");";} ?>">
+				<div id="contenido"  style="<?php //if(!empty($page["Page"]["fondo"])){ echo "background: url(/corpdesam/img/".$page["Page"]["fondo"].");";} ?>">
 					<h2 class="titulo"><?php echo strtoupper($page["Page"]["title"]);?></h2>
 					<div class="wysiwyg">
 						<?php echo $content_for_layout; ?>
