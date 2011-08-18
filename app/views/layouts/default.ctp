@@ -30,10 +30,14 @@
 		echo $this->Html->css('front');
 		echo $this->Html->script("https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js");
 		echo $this->Html->script("front.js");
+		echo $this->Html->script("cufon-yui.js");
+		echo $this->Html->script("Myriad_Pro_400.font.js");
 
 		echo $scripts_for_layout;
 	?>
-	
+	<script type="text/javascript">
+		Cufon.replace('#content');
+	</script>
 </head>
 <body id="home">
 	<div id="container">
@@ -76,10 +80,18 @@
 				<li> <?php echo $html->link("",array("controller"=>"pages","action"=>"planeacion"),array("class"=>"planeacion"));?></li>
 				<li> <?php echo $html->link("",array("controller"=>"pages","action"=>"home"),array("class"=>"home"));?></li>
 			</ul>
+		
 		</div>
+
 		<div id="animado" rel="<?php echo $page["Page"]["till"]?>">
 			<?php echo $html->image($page["Page"]["animacion"]);?>
 		</div>
+	</div>
+	<div id="footer2">
+		<ul>
+			<li><?php echo $html->link($html->image("mma.jpg"),"http://www.minambiente.gov.co/",array("escape"=>false)); ?></li>
+			<li><?php echo $html->link($html->image("cvc.jpg"),"http://www.cvc.gov.co",array("escape"=>false)); ?></li>
+		</ul>
 	</div>
 </body>
 </html>

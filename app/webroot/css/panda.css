@@ -65,7 +65,7 @@
 	margin-left: 30px;
 }
 #contenido .titulo{
-	padding: 1em 3em;
+	padding: 1em 1.5em;
 	color: #a26c0f;
 	font-size:20px;
 	font-weight: bold;
@@ -95,6 +95,16 @@ div.educativa #contenido .titulo{
 	z-index: 1;
 	position: absolute;
 }
+ #footer2 {
+	height:20px;
+	width: 1057px;
+	margin:0 auto;
+	text-align:center;
+}
+ #footer2  li{
+	display:inline;
+	margin-left:10px;
+ }
 #nav{
 	
 }
