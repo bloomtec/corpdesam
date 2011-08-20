@@ -16,7 +16,7 @@ class PagesController extends AppController {
 		
 	}
 	function hojaDeVida(){
-		$this->layout="ajax";
+		$this->layout="hojadevida";
 		$this->set("title","Envianos tu hoja de vida");
 		$this->set("fondo","background.jpg");
 	}

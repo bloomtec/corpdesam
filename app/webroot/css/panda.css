@@ -1,7 +1,7 @@
 #container{
 	position:relative;
 	width: 1057px;
-	height: 797px;
+	height: 785px;
 	overflow:hidden;
 	
 	background-position:center;
@@ -45,22 +45,23 @@
 	
 }
 #logo{
-	width: 374px;
-	height: 86px;
+	width: 178px;
+	height: 212px;
 	margin: 0 auto;
-	background: url(../img/logo.png);
+	background: url(../img/logocorpdesam1.png);
+	margin-top:-30px;
 }
 #contenido{
-	width: 585px;
-	height:509px;
+	width: 530px;
+	height:385px;
 /*	background: url(../img/contenido_standar.png); */
 	margin: 0 auto;
 	position: relative
 
 }
 .wysiwyg{
-	height:445px;
-	width:526px;
+	height:340px;
+	width:520px;
 	overflow: auto;
 	margin-left: 30px;
 }
@@ -96,52 +97,88 @@ div.educativa #contenido .titulo{
 	position: absolute;
 }
  #footer2 {
-	height:20px;
+	height:50px;
 	width: 1057px;
 	margin:0 auto;
-	text-align:center;
+	text-align:center; 
+	background: url(../img/barra.png);
+	background-repeat:none;
+	background-position:top center;
 }
  #footer2  li{
 	display:inline;
 	margin-left:10px;
+	margin-top:5px;
+ }
+ #footer2  img{
+	height:40px;
  }
 #nav{
 	
 }
-#nav a{
-	width:129px;
-	height:66px;
-	display: inline-block;
-	
-}
+
 #nav .ambiental{
 	background: url(../img/ambiental.png);
+	background-repeat:no-repeat;
 }
 #nav .home{
-	background: url(../img/ambiental.png);
+	background: url(../img/urbanismo.png);
+	background-repeat:no-repeat;
 }
 #nav .juridica{
 	background: url(../img/juridica.png);
+	background-repeat:no-repeat;
 }
 #nav .mineria{
 	background: url(../img/mineria.png);
+	background-repeat:no-repeat;
 }
 #nav .educativa{
 	background: url(../img/educativa.png);
+	background-repeat:no-repeat;
 }
 #nav .perfil{
 	background: url(../img/perfil.png);
+	background-repeat:no-repeat;
 }
 #nav .planeacion{
-	background: url(../img/ambiental.png);
+	background: url(../img/planeacion.png);
+	background-repeat:no-repeat;
+}
+#nav .trabaja{
+	background: url(../img/trabaja-con-nosotros.png);
+	background-repeat:no-repeat;
+}
+#nav .first{
+	margin-left:0;
+}
+#nav .last{
+	margin-right:0;
+}
+#nav a{
+	width:118px;
+	height:62px;
+	display: inline-block;
+	background-repeat:no-repeat;
+	
 }
 #footer li{
 	display: inline-block;;
-	margin: 70px 5px 0 10px;
+	margin: 70px 3px 0 3px;
 }
 
 .archivo{
 	width: 350px;
+	float:left;
+}
+.inputs{
+	float:left;
+	width:350px;
+}
+.inputs label{
+	width:167px;
+	display:block;
+	float:left;
 }
 .social{
 	position: absolute;
@@ -175,11 +212,12 @@ position: absolute;
 .enviar{
 	margin-left:20px;
 	float:left;
+	margin-top: -16px;
 }
 .hoja-de-vida {
-	padding-top: 40px;
 	width:750px;
 	background: white;
+	height: 330px;
 }
 .hoja-de-vida h1{
 	color:black;
@@ -205,4 +243,23 @@ position: absolute;
 	position:absolute;
 	bottom:-17px;
 	left:60px;
+}
+.forms{
+	width:750px;
+	margin:0 auto;
+}
+#hojaVida #contenido{
+	width:750px;
+}
+#hojaVida #content{
+	width:750px;
+}
+#hojaVida .titulo{
+	padding-bottom:0.3em;
+}
+#ArchivoComentarios{
+	height:100px;
+}
+.textArea{
+	margin-top: -5px;
 }

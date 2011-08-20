@@ -49,10 +49,6 @@
 		</object>
 	</div>
 		<div id="header">
-			<ul class="links">
-				<li><?php echo $html->link("CVC","http://www.cvc.gov.co");?></li>
-				<li><?php echo $html->link("Ministerio de Ambiente","http://www.cvc.gov.co");?></li>
-			</ul>
 			<ul class="social">
 				<li><?php echo $html->link($html->image("facebook.png"),"http://facebook.com",array("escape"=>false));?></li>
 				<li><?php echo $html->link($html->image("twitter.png"),"http://facebook.com",array("escape"=>false));?></li>
@@ -72,13 +68,14 @@
 		</div>
 		<div id="footer">
 			<ul id="nav">
-				<li> <?php echo $html->link("",array("controller"=>"pages","action"=>"ambiental"),array("class"=>"ambiental"));?></li>
+				<li> <?php echo $html->link("",array("controller"=>"pages","action"=>"ambiental"),array("class"=>"ambiental first"));?></li>
 				<li> <?php echo $html->link("",array("controller"=>"pages","action"=>"juridica"),array("class"=>"juridica"));?></li>
 				<li> <?php echo $html->link("",array("controller"=>"pages","action"=>"mineria"),array("class"=>"mineria"));?></li>
 				<li> <?php echo $html->link("",array("controller"=>"pages","action"=>"educativa"),array("class"=>"educativa"));?></li>
 				<li> <?php echo $html->link("",array("controller"=>"pages","action"=>"perfilProfesional"),array("class"=>"perfil"));?></li>
 				<li> <?php echo $html->link("",array("controller"=>"pages","action"=>"planeacion"),array("class"=>"planeacion"));?></li>
 				<li> <?php echo $html->link("",array("controller"=>"pages","action"=>"home"),array("class"=>"home"));?></li>
+				<li> <?php echo $html->link("",array("controller"=>"pages","action"=>"hojaDeVida"),array("class"=>"trabaja last"));?></li>
 			</ul>
 		
 		</div>
@@ -91,6 +88,7 @@
 		<ul>
 			<li><?php echo $html->link($html->image("mma.jpg"),"http://www.minambiente.gov.co/",array("escape"=>false)); ?></li>
 			<li><?php echo $html->link($html->image("cvc.jpg"),"http://www.cvc.gov.co",array("escape"=>false)); ?></li>
+			<li><?php echo $html->link($html->image("mail.png"),"mail.corpdesam.org",array("escape"=>false)); ?></li>
 		</ul>
 	</div>
 </body>
