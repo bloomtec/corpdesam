@@ -42,6 +42,17 @@
 	<script type="text/javascript">
 		Cufon.replace('#content');
 	</script>
+	<!--[if IE]>
+  <style type="text/css">
+    .enviar{
+	margin-top:0;
+    }
+    #footer{
+	bottom:0;
+    }
+    
+  </style>
+<![endif]-->
 </head>
 <body id="hojaVida">
 	<div id="container">
@@ -49,6 +60,7 @@
 		<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="1057" height="797">
 		  <param name="movie" value="<?php echo $html->url("/swf/corpdesam.swf");?>" />
 		  <param name="quality" value="high" />
+		  <param name="wmode" value="opaque" />
 		  <embed src="<?php echo $html->url("/swf/corpdesam.swf");?>" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer"  wmode='opaque' type="application/x-shockwave-flash" width="1057" height="797"></embed>
 		</object>
 	</div>
